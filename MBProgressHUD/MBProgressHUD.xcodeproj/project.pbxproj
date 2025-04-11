@@ -13,8 +13,8 @@
 		618894782C4E300F00F51C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618894762C4E300F00F51C3E /* Main.storyboard */; };
 		6188947A2C4E301000F51C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618894792C4E301000F51C3E /* Assets.xcassets */; };
 		6188947D2C4E301000F51C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6188947B2C4E301000F51C3E /* LaunchScreen.storyboard */; };
-		618894862C4E30D100F51C3E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 618894842C4E30D100F51C3E /* MBProgressHUD.m */; };
-		618894872C4E30D100F51C3E /* MBProgressHUD.h in Sources */ = {isa = PBXBuildFile; fileRef = 618894852C4E30D100F51C3E /* MBProgressHUD.h */; };
+		61BE93AB2DA8BE9100B94997 /* MBProgressHUD.h in Sources */ = {isa = PBXBuildFile; fileRef = 61BE93A72DA8BE7700B94997 /* MBProgressHUD.h */; };
+		61BE93AC2DA8BE9100B94997 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 61BE93A92DA8BE7700B94997 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +26,9 @@
 		618894792C4E301000F51C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6188947C2C4E301000F51C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6188947E2C4E301000F51C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		618894842C4E30D100F51C3E /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../Library/MBProgressHUD.m; sourceTree = "<group>"; };
-		618894852C4E30D100F51C3E /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../Library/MBProgressHUD.h; sourceTree = "<group>"; };
 		618894882C4E33B800F51C3E /* MBProgressHUD-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Briding-Header.h"; sourceTree = "<group>"; };
+		61BE93A72DA8BE7700B94997 /* MBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		61BE93A92DA8BE7700B94997 /* MBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +45,7 @@
 		618894642C4E300E00F51C3E = {
 			isa = PBXGroup;
 			children = (
-				618894852C4E30D100F51C3E /* MBProgressHUD.h */,
-				618894842C4E30D100F51C3E /* MBProgressHUD.m */,
+				61BE93AA2DA8BE7700B94997 /* Library */,
 				6188946F2C4E300E00F51C3E /* MBProgressHUD */,
 				6188946E2C4E300E00F51C3E /* Products */,
 			);
@@ -73,6 +72,24 @@
 				618894882C4E33B800F51C3E /* MBProgressHUD-Briding-Header.h */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		61BE93A82DA8BE7700B94997 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				61BE93A72DA8BE7700B94997 /* MBProgressHUD.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		61BE93AA2DA8BE7700B94997 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				61BE93A82DA8BE7700B94997 /* include */,
+				61BE93A92DA8BE7700B94997 /* MBProgressHUD.m */,
+			);
+			name = Library;
+			path = ../Sources/Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				618894862C4E30D100F51C3E /* MBProgressHUD.m in Sources */,
-				618894872C4E30D100F51C3E /* MBProgressHUD.h in Sources */,
+				61BE93AB2DA8BE9100B94997 /* MBProgressHUD.h in Sources */,
+				61BE93AC2DA8BE9100B94997 /* MBProgressHUD.m in Sources */,
 				618894752C4E300E00F51C3E /* ViewController.swift in Sources */,
 				618894712C4E300E00F51C3E /* AppDelegate.swift in Sources */,
 				618894732C4E300E00F51C3E /* SceneDelegate.swift in Sources */,
