@@ -59,6 +59,8 @@ ls -la ./build/MBProgressHUD.xcframework/ios-arm64_x86_64-simulator/MBProgressHU
 
 echo "XCFramework created at ./build/MBProgressHUD.xcframework"
 
+# Configuration
+FRAMEWORK_NAME="MBProgressHUD"
 XC_FRAMEWORK_PATH="./build/${FRAMEWORK_NAME}.xcframework"
 # Bump patch version in version.yml
 echo "Bumping patch version..."
